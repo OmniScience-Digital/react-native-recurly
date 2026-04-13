@@ -2,14 +2,10 @@ import "@/global.css";
 import { useFonts } from "expo-font";
 import { SplashScreen, Stack } from "expo-router";
 import { StatusBar } from "expo-status-bar";
-import { styled } from "nativewind";
 import { useEffect } from "react";
-import {
-  SafeAreaView as RNSafeAreaView,
-  SafeAreaProvider,
-} from "react-native-safe-area-context";
+import { SafeAreaProvider } from "react-native-safe-area-context";
 
-const SafeAreaView = styled(RNSafeAreaView);
+SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {
   const [fontsLoaded] = useFonts({
