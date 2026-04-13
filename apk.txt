@@ -1,0 +1,48 @@
+# 📱 Android (APK)
+
+### ✅ Build APK
+
+```bash
+cd android
+./gradlew assembleDebug
+```
+
+📦 Output:
+
+```
+android/app/build/outputs/apk/debug/app-debug.apk
+```
+
+### 📲 Install
+
+* Send APK
+* Enable **Install unknown apps**
+* Tap → install
+
+---
+
+# 🍏 iPhone (IPA)
+
+### ✅ Build IPA (requires Mac + Xcode)
+
+```bash
+npx react-native run-ios
+```
+
+Or via Xcode:
+
+* Open `ios` folder in Xcode
+* Product → Archive
+* Export as **IPA**
+
+### 📲 Install
+
+* Use TestFlight **or**
+* Install via Xcode (device connected)
+
+---
+
+### ⚠️ Note
+
+* Android installs directly
+* iPhone requires TestFlight or Xcode
